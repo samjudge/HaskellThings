@@ -1,0 +1,11 @@
+--print the last number of a list
+
+myLast :: Eq n => [n] -> n
+
+myLast (xs:s)
+  | s == []     = xs 
+  | otherwise   = t  
+  where t = myLast s
+
+main = do
+  print $ myLast [1,2,3,4,5] 
