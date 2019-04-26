@@ -6,5 +6,7 @@ myLast (x:xs)
   | otherwise   = n
   where n = myLast xs
 
+-- out
+  
 main = do
   print $ myLast [1,2,3,4,5] 
